@@ -1,44 +1,47 @@
 ﻿#ifndef ARRAY_H_
 #define ARRAY_H_
 
-#include <cstdlib>
 #include <cassert>
+#include <cstdlib>
+#include <iterator>
+#include <new>
 #include <utility>
 
 template<typename T>
 class Array {
 public:
-  Array(); // конструктор: объявление и выделение памяти
-  ~Array(); // деструктор: освобождение памяти
+  // Конструктор по умолчанию
+  Array();
 
-  void Insert(const T& value); // вставка элемента в массив
-  void Remove(int index); // удаление элемента из массива по индексу
-  T& operator[] (int index); // оператор индексирования
-  int Size() const; // размер массива
+  // Деструктор освобождает выделенную память
+  ~Array();
 
-  class Iterator; // объявление итератора
-  Iterator begin(); // возвращение первого элемента через итератор
-  Iterator end(); // возвращение последнего элемента через итератор
+  // Вставка элемента в конец массива
+  void Insert(const T& value);
 
-private:
-  void Resize(); // изменение размерности массива
+  // Удаление элемента по индексу
+  void Remove(int index);
 
-  T* data_; // указатель на данные
-  int capacity_; // вместимость массива
-  int current_size_; // текущий размер массива
-};
+  // Доступ по индексу
+  T& operator[](int index);
+  const T& operator[](int index) const;
 
-template<typename T>
-class Array<T>::Iterator {
-public:
-  explicit Iterator(T* ptr) : ptr_(ptr) {}
+  // Получение текущего размера
+  int Size() const;
 
-  T& operator*() { return *ptr_; } // разыменование
-  Iterator& operator++() { ++ptr_; return *this; } // префиксный инкремент
-  bool operator!=(const Iterator& other) const { return ptr_ != other.ptr_; } // сравнение
+  // Методы begin и end для range-based for
+  T* begin();
+  T* end();
+  const T* begin() const;
+  const T* end() const;
 
 private:
-  T* ptr_;
+  // Перераспределение памяти
+  void Resize();
+
+  T* data_;            // Указатель на данные массива
+  int capacity_;       // Емкость массива
+  int current_size_;   // Текущий размер массива
 };
 
 #endif // ARRAY_H_
