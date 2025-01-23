@@ -1,0 +1,8 @@
+﻿  array.cpp
+  main.cpp
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(180,5): warning C4984: 'if constexpr' is a C++17 language extension
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(198,3): warning C4984: 'if constexpr' is a C++17 language extension
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(218,3): warning C4984: 'if constexpr' is a C++17 language extension
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(224,8): warning C4984: 'if constexpr' is a C++17 language extension
+  Generating Code...
+  DynamicArray.vcxproj -> D:\rep\DynamicArray_rep\DynamicArray\x64\Debug\DynamicArray.exe
