@@ -1,0 +1,42 @@
+﻿  pch.cpp
+  test.cpp
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(180,5): warning C4984: 'if constexpr' is a C++17 language extension
+  (compiling source file '/test.cpp')
+      D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(180,5):
+      the template instantiation context (the oldest one first) is
+          D:\rep\DynamicArray_rep\DynamicArray\DynamicArray_GoogleTest\test.cpp(10,14):
+          see reference to class template instantiation 'Array<int>' being compiled
+          D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(174,49):
+          while compiling class template member function 'int Array<int>::Insert(int,const T &)'
+          with
+          [
+              T=int
+          ]
+              D:\rep\DynamicArray_rep\DynamicArray\DynamicArray_GoogleTest\test.cpp(21,13):
+              see the first reference to 'Array<int>::Insert' in 'DynamicArrayTest_InsertByIndex_Test::TestBody'
+  
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(198,3): warning C4984: 'if constexpr' is a C++17 language extension
+  (compiling source file '/test.cpp')
+      D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(198,3):
+      the template instantiation context (the oldest one first) is
+          D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(195,34):
+          while compiling class template member function 'void Array<int>::Remove(int)'
+              D:\rep\DynamicArray_rep\DynamicArray\DynamicArray_GoogleTest\test.cpp(32,13):
+              see the first reference to 'Array<int>::Remove' in 'DynamicArrayTest_RemoveElement_Test::TestBody'
+  
+D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(218,3): warning C4984: 'if constexpr' is a C++17 language extension
+  (compiling source file '/test.cpp')
+      D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(218,3):
+      the template instantiation context (the oldest one first) is
+          D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(90,41):
+          while compiling class template member function 'Array<int>::Array(Array<int> &&) noexcept'
+              D:\rep\DynamicArray_rep\DynamicArray\DynamicArray_GoogleTest\test.cpp(127,19):
+              see the first reference to 'Array<int>::Array' in 'DynamicArrayTest_CopyAndMoveConstructors_Test::TestBody'
+          D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(215,38):
+          while compiling class template member function 'void Array<int>::Resize_(int)'
+              D:\rep\DynamicArray_rep\DynamicArray\DynamicArray\array.cpp(177,12):
+              see the first reference to 'Array<int>::Resize_' in 'Array<int>::Insert'
+              D:\rep\DynamicArray_rep\DynamicArray\DynamicArray_GoogleTest\test.cpp(21,13):
+              see the first reference to 'Array<int>::Insert' in 'DynamicArrayTest_InsertByIndex_Test::TestBody'
+  
+  DynamicArray_GoogleTest.vcxproj -> D:\rep\DynamicArray_rep\DynamicArray\x64\Debug\DynamicArray_GoogleTest.exe
