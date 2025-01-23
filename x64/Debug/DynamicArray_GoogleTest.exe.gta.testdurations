@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\rep\DynamicArray_rep\DynamicArray\x64\Debug\DynamicArray_GoogleTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="DynamicArrayTest.InsertEmptyElementsTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.InsertElementsAndGiveValuesTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.RemoveElementsTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.ResizeTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.IteratorTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.ReverseIteratorTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.ConstIteratorTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.InvalidIndexTest" Duration="0" />
+    <TestDuration Test="DynamicArrayTest.InsertIntoEmptyArray" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.InsertByIndex" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.RemoveElement" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.HandleLargeNumberOfElements" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.HandleStringType" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.IteratorTraversal" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.ReverseIteratorTraversal" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.InsertWithResize" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.OutOfBoundsAccess" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.CopyAndMoveConstructors" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.CopyAssignmentOperator" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.MoveAssignmentOperator" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.AtMethodTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.TriggerResizeTest" Duration="1" />
+    <TestDuration Test="DynamicArrayTest.TriggerResizeMoreTest" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
